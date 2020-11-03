@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>s11</title>
+    <link rel = "stylesheet" href= "index.css">
+</head>
+<body>
+    <h1>MI TWITTER</h1>
+    <div id= "formulario">
+        
+        <input id ="Codigo" type = "text" placeholder="Escribe tu publicación">
+        <input id ="Nombre" type = "text" placeholder="Nombre">
+        <button id ="bregister"> Comentar </button>
+         
+    </div>
+
+    <h3 id ="tituloFeed">Feed news</h3>
+
+    <div id= "Contenedor"></div>
+    
+</body>
+</html>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+<script>
+ 
+  var firebaseConfig = {
+    apiKey: "AIzaSyCu5pVUdk20c2qtTCtTlrcAXQ9IYG35rbY",
+    authDomain: "semana11eco.firebaseapp.com",
+    databaseURL: "https://semana11eco.firebaseio.com",
+    projectId: "semana11eco",
+    storageBucket: "semana11eco.appspot.com",
+    messagingSenderId: "560942495357",
+    appId: "1:560942495357:web:31903594bd1965fb9da314",
+    measurementId: "G-LF7GY6GDYB"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+ 
+</script>
+<script src="components/Fila.js"></script>
+<script src="index.js"></script>
